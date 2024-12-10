@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let mrsf = document.getElementById("mrsf")
 let sfDollarCounter = document.getElementById("sf-dollars")
 let sfDollars = 0
@@ -10,3 +11,6 @@ function mrsfClick() {
     setTimeout()
 }
 mrsf.addEventListener("click", mrsfClick)
+=======
+let mrsf = document.getElementById("mrsf-btn")
+>>>>>>> bfe91602f21bc32327fc234f6a2366690c32445c
