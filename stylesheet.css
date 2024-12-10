@@ -1,3 +1,22 @@
 .mini {
     font-size: 11px;
 }
+
+.mrsf {
+    display: flex;
+    justify-content: center;
+
+}
+
+.body {
+    background-color: aqua;
+}
+
+hr {
+    margin-bottom: 100pt
+}
+
+.sf-dollars {
+    display: flex;
+    justify
+}
