@@ -2,14 +2,14 @@
     font-size: 11px;
 }
 
-.mrsf {
+.mrsf { 
     display: flex;
-    justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
 }
 
-.body {
-    background-color: aqua;
+body {
+    background-color: #00aaff;
 }
 
 hr {
@@ -20,3 +20,10 @@ hr {
     display: flex;
     justify
 }
+
+#sf-dollars {
+    font-size: 75px;
+}
+
+#mrsf {
+    width: 175px;
