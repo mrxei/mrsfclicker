@@ -2,10 +2,44 @@
     font-size: 11px;
 }
 
+.game {
+    display: flex;
+    justify-content: space-around;
+}
+
 .mrsf { 
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#sf-dollars {
+    font-size: 75px;
+}
+
+#mrsf {
+    width: 175px;
+}
+
+.upgrades {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upgrades div p {
+    margin-bottom: 0px;
+    margin-top: 10px
+}
+
+.upgrades div {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.upgrades div img {
+    width: 100px;
 }
 
 body {
@@ -16,14 +50,3 @@ hr {
     margin-bottom: 100pt
 }
 
-.sf-dollars {
-    display: flex;
-    justify
-}
-
-#sf-dollars {
-    font-size: 75px;
-}
-
-#mrsf {
-    width: 175px;
