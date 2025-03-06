@@ -55,3 +55,54 @@ glassesClickable.addEventListener("click", glassesUpgrade)
 mustacheClickable.addEventListener("click", mustacheUpgrade)
 computerClickable.addEventListener("click", computerUpgrade)
 window.setInterval(giveSFDollars, 1000)
+
+function glassesUpgrade() {
+    if (sfDollars >= 20) {
+        sfDollars -= 20;
+        sfDollarCounter.innerText = sfDollars;
+        SFDPS += 1;
+        glasses += 1;
+        glassesCounter.innerText = "Owned: " + glasses;
+        dpsCounter.innerText = "times! (" + SFDPS + " SF Dollars per second)";
+        
+        // Trigger glasses animation
+        glassesClickable.classList.add("glasses-animation");
+        setTimeout(() => {
+            glassesClickable.classList.remove("glasses-animation");
+        }, 500);  // Match the duration of the animation
+    }
+}
+
+function mustacheUpgrade() {
+    if (sfDollars >= 500) {
+        sfDollars -= 500;
+        sfDollarCounter.innerText = sfDollars;
+        SFDPS += 20;
+        mustaches += 1;
+        mustacheCounter.innerText = "Owned: " + mustaches;
+        dpsCounter.innerText = "times! (" + SFDPS + " SF Dollars per second)";
+        
+        // Trigger mustache animation
+        mustacheClickable.classList.add("mustache-animation");
+        setTimeout(() => {
+            mustacheClickable.classList.remove("mustache-animation");
+        }, 500);  // Match the duration of the animation
+    }
+}
+
+function computerUpgrade() {
+    if (sfDollars >= 5000) {
+        sfDollars -= 5000;
+        sfDollarCounter.innerText = sfDollars;
+        SFDPS += 250;
+        computers += 1;
+        computerCounter.innerText = "Owned: " + computers;
+        dpsCounter.innerText = "times! (" + SFDPS + " SF Dollars per second)";
+        
+        // Trigger computer animation
+        computerClickable.classList.add("computer-animation");
+        setTimeout(() => {
+            computerClickable.classList.remove("computer-animation");
+        }, 500);  // Match the duration of the animation
+    }
+}
